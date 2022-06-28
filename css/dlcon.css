@@ -203,6 +203,7 @@
 }
 
 .section03 {
+    position: relative;
     padding: 100px 0;
     letter-spacing: -0.025em;
     text-align: center;
@@ -216,10 +217,117 @@
 }
 
 .section03 .tech_slider figure {
-    padding: 0 30px;
+    padding: 0 52px;
     opacity: 0.5;
 }
 
 .section03 .tech_slider figure.slick-center {
     opacity: 1;
+}
+
+.section03 .slide_arrows i {
+    position: absolute;
+    padding: 10px 15px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.section03 .slide_arrows i:nth-child(1) {
+    margin: 0 0 0 -630px;
+}
+
+.section03 .slide_arrows i:nth-child(2) {
+    margin: 0 0 0 630px;
+}
+
+.section03 .slide_inner {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 1200px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.section03 .slide_inner h3 {
+    margin: 50px auto 10px auto;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.section03 .slide_inner p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section04 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section04 h2 {
+    margin: 0 0 50px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+#footer {
+    line-height: 80px;
+    background: #0c2340;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* #footer .top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+} */
+
+#footer .top::after {
+    content: "";
+    display: block;
+    margin: 0 350px;
+    width: 1200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#footer .top dt {
+    font-weight: 500;
+}
+
+#footer .top dt,
+#footer .top dd {
+    display: inline-block;
+}
+
+#footer .top dt::before,
+#footer .top dd~dd::before {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 1px;
+    height: 11px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#footer .top i {
+    font-size: 23px;
+    margin: 0 3px;
+}
+
+#footer .top .container {
+    justify-content: space-between;
+}
+
+#footer .bottom address {
+    font-style: normal;
 }

@@ -19,6 +19,20 @@ $(function () {
     $('.tech_slider').slick({
         arrows: false,
         centerMode: true,
-        centerPadding: '250px'
+        centerPadding: '300px',
+    });
+
+    $('.slide_arrows i:nth-child(1)').on('click', function () {
+        $('.tech_slider').slick('slickPrev');
+        $('.slide_inner').slick('slickPrev');
+    });
+
+    $('.slide_arrows i:nth-child(2)').on('click', function () {
+        $('.tech_slider').slick('slickNext');
+        $('.slide_inner').slick('slickNext');
+    });
+
+    $('.slide_inner').slick({
+        arrows: false,
     });
 })
