@@ -1,0 +1,225 @@
+/* * {
+    outline: 1px solid #f00;
+} */
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    line-height: 100px;
+}
+
+#header .container {
+    justify-content: space-between;
+}
+
+#header h1 {
+    width: 100px;
+}
+
+#header nav>ul {
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#header .bars i {
+    font-size: 30px;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.section01 {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+.section01 .main_slider figure {
+    position: relative;
+    height: 800px;
+}
+
+.section01 .inner {
+    position: absolute;
+    inset: 30% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section01 .inner h2 {
+    margin: 0 0 10px 0;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.section01 .inner h3 {
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+}
+
+.section01 .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    transform: translate(1px, 70px);
+}
+
+.section01 .inner p::before {
+    content: "";
+    display: block;
+    margin: 10px 2px;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+}
+
+.section01 .main_slider .main01 {
+    background: url(../img/main_visual_01.jpg) no-repeat center center/cover;
+}
+
+.section01 .main_slider .main02 {
+    background: url(../img/main_visual_02.jpg) no-repeat center center/cover;
+}
+
+.section01 .main_slider .main03 {
+    background: url(../img/main_visual_03.jpg) no-repeat center center/cover;
+}
+
+.section01 .main_slider .main04 {
+    background: url(../img/main_visual_04.jpg) no-repeat center center/cover;
+}
+
+.section01 .main_slider .main05 {
+    background: url(../img/main_visual_05.jpg) no-repeat center center/cover;
+}
+
+.section01 .main_slider .main06 {
+    background: url(../img/main_visual_06.jpg) no-repeat center center/cover;
+}
+
+.section01 .main_slider .slick-dots {
+    position: absolute;
+    inset: auto auto 70px 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.section01 .main_slider .slick-dots li {
+    display: inline-block;
+    margin: 0 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+}
+
+.section01 .main_slider .slick-dots li.slick-active {
+    background: #fff;
+}
+
+.section01 .main_slider .slick-dots button {
+    display: none;
+}
+
+.section01 .controls {
+    position: absolute;
+    inset: auto 40% 50px auto;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.section02 {
+    padding: 100px 0;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.section02 h2 {
+    margin: 0 0 50px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+.section02 .main_content figure {
+    position: relative;
+    width: 1200px;
+    height: 113px;
+    margin: 0 auto 30px auto;
+    transition: height 0.5s;
+}
+
+.section02 .main_content figure:hover {
+    height: 300px;
+}
+
+.section02 .main_content .content01 {
+    background: url(../img/img01.jpg) no-repeat center center/cover;
+}
+
+.section02 .main_content .content02 {
+    background: url(../img/img03.jpg) no-repeat center center/cover;
+}
+
+.section02 .main_content .content03 {
+    background: url(../img/img05.jpg) no-repeat center center/cover;
+}
+
+.section02 .main_content .content04 {
+    background: url(../img/img07.jpg) no-repeat center center/cover;
+}
+
+.section02 .main_content .inner {
+    position: absolute;
+    width: 175px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.section02 .main_content figure:hover .inner {
+    opacity: 1;
+}
+
+.section02 .main_content a {
+    display: block;
+    margin: 150px auto;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.section03 {
+    padding: 100px 0;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.section03 h2 {
+    margin: 0 0 50px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+.section03 .tech_slider figure {
+    padding: 0 30px;
+    opacity: 0.5;
+}
+
+.section03 .tech_slider figure.slick-center {
+    opacity: 1;
+}
