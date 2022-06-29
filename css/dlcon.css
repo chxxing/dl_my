@@ -39,6 +39,11 @@
     padding: 0 30px;
 }
 
+#header nav>ul>li>a:hover {
+    color: #0c2340;
+    font-weight: 500;
+}
+
 #header nav>ul ul a {
     display: block;
     line-height: 40px;
