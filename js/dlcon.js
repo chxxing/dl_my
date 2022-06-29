@@ -35,4 +35,11 @@ $(function () {
     $('.slide_inner').slick({
         arrows: false,
     });
+
+    $('#fl').on('change', function () {
+        var lnk = $(this).val();
+        if (lnk) {
+            window.open(lnk);
+        }
+    })
 })
