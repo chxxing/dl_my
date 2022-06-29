@@ -320,6 +320,21 @@
     filter: invert(1);
 }
 
+.to_top {
+    position: fixed;
+    inset: auto 50px 50px auto;
+}
+
+.to_top i {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
 #footer {
     line-height: 80px;
     background: #0c2340;

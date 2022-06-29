@@ -36,6 +36,19 @@ $(function () {
         arrows: false,
     });
 
+    $('.to_top').on('click', function () {
+        $('html,body').animate({ scrollTop: 0 }, 200)
+    });
+
+    $(window).on('scroll', function () {
+        var sct = $(window).scrollTop();
+        if (sct > 500) {
+            $('.to_top').fadeIn(300)
+        } else {
+            $('.to_top').fadeOut(1000)
+        }
+    });
+
     $('#fl').on('change', function () {
         var lnk = $(this).val();
         if (lnk) {
